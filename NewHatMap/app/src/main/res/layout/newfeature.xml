@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffc8c8c8">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme"
+        android:orientation="horizontal"
+        android:dividerPadding="@android:dimen/app_icon_size"
+        android:background="#7dc8c8c8"
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/newLayerName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点要素"
+            android:id="@+id/drawPoint"
+            android:checked="true"
+            android:textColor="#ffffffff" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="线要素"
+            android:id="@+id/drawLine"
+            android:checked="false"
+            android:textColor="#ffffffff" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="面要素"
+            android:id="@+id/drawSurface"
+            android:textColor="#ffffffff" />
+
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/newLayerName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff020202"
+        android:hint="输入新图层名"
+        android:textColorHint="#ffffffff"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+</RelativeLayout>

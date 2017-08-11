@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp">
+    <TableRow>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="用户名："
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_margin="5dp" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/UserName"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:hint="用户名/邮箱/手机号"
+            android:textColorHint="#ffffff"
+            android:selectAllOnFocus="true"
+            android:layout_margin="5dp"
+            android:linksClickable="false" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="密码："
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:gravity="right"
+            android:layout_margin="5dp" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/UserPass"
+            android:hint="输入密码"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:password="true"
+            android:inputType="numberPassword"
+            android:selectAllOnFocus="true"
+            android:layout_margin="5dp"
+            android:singleLine="false" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="验证码："
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_margin="5dp" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/UserTest"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:hint="图中数字"
+            android:textColorHint="#ffffff"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:layout_margin="5dp" />
+    </TableRow>
+</TableLayout>

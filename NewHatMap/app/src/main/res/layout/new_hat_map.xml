@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context=".NewHatMap"
+    android:id="@+id/MainLayout">
+
+    <com.ivy.hatfiled.appui.MapControl
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/MyMapControl"
+        android:background="#32808ec8" />
+
+</RelativeLayout>

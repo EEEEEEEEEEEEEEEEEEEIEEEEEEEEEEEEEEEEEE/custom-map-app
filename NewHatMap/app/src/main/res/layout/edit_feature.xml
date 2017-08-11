@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#32020202">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/undoEdit"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/undo_btn"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/redoEdit"
+        android:layout_alignTop="@+id/undoEdit"
+        android:layout_toRightOf="@+id/undoEdit"
+        android:layout_toEndOf="@+id/undoEdit"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/redo_btn" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectEdit"
+        android:layout_alignTop="@+id/redoEdit"
+        android:layout_toRightOf="@+id/redoEdit"
+        android:layout_toEndOf="@+id/redoEdit"
+        android:background="@drawable/selectvector_btn"
+        android:layout_marginLeft="5dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/panEdit"
+        android:layout_alignTop="@+id/selectEdit"
+        android:layout_toRightOf="@+id/selectEdit"
+        android:layout_toEndOf="@+id/selectEdit"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/editpan_btn" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pointEdit"
+        android:layout_below="@+id/undoEdit"
+        android:layout_alignLeft="@+id/undoEdit"
+        android:layout_alignStart="@+id/undoEdit"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/editpoint_btn"
+        android:adjustViewBounds="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lineEdit"
+        android:layout_alignTop="@+id/pointEdit"
+        android:layout_alignRight="@+id/redoEdit"
+        android:layout_alignEnd="@+id/redoEdit"
+        android:background="@drawable/editline_btn" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shapeEdit"
+        android:layout_alignTop="@+id/lineEdit"
+        android:layout_alignLeft="@+id/selectEdit"
+        android:layout_alignStart="@+id/selectEdit"
+        android:background="@drawable/editshape_btn"
+        android:clickable="false"
+        android:baselineAlignBottom="false"
+        android:focusable="false" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/attrsEdit"
+        android:layout_alignTop="@+id/shapeEdit"
+        android:layout_alignLeft="@+id/panEdit"
+        android:layout_alignStart="@+id/panEdit"
+        android:background="@drawable/editattrs_btn"
+        android:adjustViewBounds="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editReshape"
+        android:layout_below="@+id/pointEdit"
+        android:layout_alignLeft="@+id/pointEdit"
+        android:layout_alignStart="@+id/pointEdit"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/editreshape_btn" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/splitPolygon"
+        android:layout_alignTop="@+id/editReshape"
+        android:layout_alignLeft="@+id/lineEdit"
+        android:layout_alignStart="@+id/lineEdit"
+        android:background="@drawable/splitpolygon_btn" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addPoint"
+        android:layout_alignTop="@+id/splitPolygon"
+        android:layout_alignLeft="@+id/shapeEdit"
+        android:layout_alignStart="@+id/shapeEdit"
+        android:background="@drawable/addvector_btn" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deletePoint"
+        android:layout_alignTop="@+id/addPoint"
+        android:layout_alignLeft="@+id/attrsEdit"
+        android:layout_alignStart="@+id/attrsEdit"
+        android:background="@drawable/deletevector_btn" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/closeEdit"
+        android:background="@drawable/closeedit_btn"
+        android:layout_below="@+id/deletePoint"
+        android:layout_alignLeft="@+id/deletePoint"
+        android:layout_alignStart="@+id/deletePoint"
+        android:layout_marginTop="5dp" />
+</RelativeLayout>

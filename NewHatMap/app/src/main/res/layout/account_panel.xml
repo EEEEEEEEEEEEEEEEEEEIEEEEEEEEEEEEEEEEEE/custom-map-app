@@ -1,0 +1,162 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.ivy.hatfiled.appui.AccountPanel"
+    android:background="#96020202"
+    android:gravity="center|top">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/accountbar">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="＜"
+            android:id="@+id/GoBack"
+            android:layout_weight="1"
+            android:textColor="#fffaf3ff"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:nestedScrollingEnabled="false"
+            android:gravity="center"
+            android:background="@drawable/account_bar_btns"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/MY_ACCOUNT_MENU"
+            android:textColor="#fffaf3ff"
+            android:id="@+id/accountText"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/btn_unpress"
+            android:layout_weight="2" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/MORE_SETTING_MENU"
+            android:id="@+id/settings"
+            android:layout_weight="1"
+            android:textColor="#fffaf3ff"
+            android:background="@drawable/account_bar_btns"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/account_bar_btns"
+        android:layout_marginTop="10dp"
+        android:id="@+id/accountControl"
+        android:layout_below="@+id/accountbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <view
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            class="com.ivy.hatfiled.otherui.CircleImageView"
+            android:id="@+id/UHeader"
+            android:contentDescription="@string/UheadImg"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/headernullgray"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/u_name"
+                        android:textColor="#ffffffff"
+                        android:textSize="18sp"
+                        android:id="@+id/UName"
+                        android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:id="@+id/loginState"
+                        android:src="@drawable/offline"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/u_state"
+                    android:textColor="#ffd5ffda"
+                    android:textSize="14sp"
+                    android:id="@+id/UState"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textIsSelectable="true" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="＞"
+                android:id="@+id/textView3"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="#fffaf3ff"
+                android:textStyle="bold"
+                android:singleLine="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="@string/DataInput"
+        android:textSize="16sp"
+        android:id="@+id/input"
+        android:background="@drawable/data_convent_btn"
+        android:textColor="#ffffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>

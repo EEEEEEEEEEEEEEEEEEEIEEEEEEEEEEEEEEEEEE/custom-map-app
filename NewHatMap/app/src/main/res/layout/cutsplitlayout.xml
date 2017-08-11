@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffffffea">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GridPoint"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/gridpoint_btn" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GridLine"
+        android:layout_alignTop="@+id/GridPoint"
+        android:layout_toRightOf="@+id/GridPoint"
+        android:layout_toEndOf="@+id/GridPoint"
+        android:background="@drawable/gridline_btn"
+        android:layout_marginLeft="10dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GridSurface"
+        android:layout_alignTop="@+id/GridLine"
+        android:layout_toRightOf="@+id/GridLine"
+        android:layout_toEndOf="@+id/GridLine"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/gridsurface_btn" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SplitPoint"
+        android:layout_below="@+id/GridPoint"
+        android:layout_alignLeft="@+id/GridPoint"
+        android:layout_alignStart="@+id/GridPoint"
+        android:background="@drawable/splitpoint_btn"
+        android:layout_marginTop="10dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SplitLine"
+        android:layout_alignTop="@+id/SplitPoint"
+        android:layout_alignLeft="@+id/GridLine"
+        android:layout_alignStart="@+id/GridLine"
+        android:background="@drawable/splitline_btn" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SplitSurface"
+        android:layout_alignTop="@+id/SplitLine"
+        android:layout_alignLeft="@+id/GridSurface"
+        android:layout_alignStart="@+id/GridSurface"
+        android:background="@drawable/splitsurface_btn" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CloseTools"
+        android:background="@drawable/closetools_btn"
+        android:adjustViewBounds="true"
+        android:layout_below="@+id/SplitSurface"
+        android:layout_alignLeft="@+id/SplitSurface"
+        android:layout_alignStart="@+id/SplitSurface"
+        android:layout_marginTop="10dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PanTool"
+        android:focusable="true"
+        android:background="@drawable/pantool_btn"
+        android:layout_alignBottom="@+id/CloseTools"
+        android:layout_alignLeft="@+id/SplitLine"
+        android:layout_alignStart="@+id/SplitLine" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ReturnEdit"
+        android:background="@drawable/returnedit_btn"
+        android:layout_alignTop="@+id/PanTool"
+        android:layout_alignLeft="@+id/SplitPoint"
+        android:layout_alignStart="@+id/SplitPoint" />
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">NewHatMap</string>
+    <string name="UheadImg">头像？</string>
+    <string name="u_name">未登录</string>
+    <string name="u_state">心情不好,不要来烦恼我,我还有一大堆的事情要做,太累了。</string>
+    <string name="input_png">导入到数据库文件</string>
+    <string name="pImg">Img</string>
+    <string name="DataInput">数据入库</string>
+    <string name="ButtonEdit">ButtonEdit</string>
+    <string name="Icon">Icon</string>
+    <string name="layers">layers</string>
+    <string name="SEARCH_MENU">搜索</string>
+    <string name="MANAGE_TRACK_MENU">路径</string>
+    <string name="BOOKMARKS_MENU">书签</string>
+    <string name="BOOKMARK_ADD_MENU">添加书签</string>
+    <string name="BOOKMARKS_VIEW_MENU">所有书签</string>
+    <string name="MY_LOCATION_MENU">我的位置</string>
+    <string name="MY_ACCOUNT_MENU">账户</string>
+    <string name="MORE_SETTING_MENU">更多</string>
+    <string name="Personal_CENTER">个人中心</string>
+
+
+</resources>
